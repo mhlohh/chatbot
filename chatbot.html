@@ -30,7 +30,7 @@
         padding-left: 30px;
         padding-right: 30px;
         box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.404);
-        transition: padding 0.8s, box-shadow 0.8s;
+        transition: padding 0.52s, box-shadow 0.52s;
       }
 
       .app-container:hover{
@@ -48,7 +48,7 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-
+      
       .chat-input-container {
         display: flex;
         gap: 10px;
@@ -66,7 +66,7 @@
         flex: 1;
         background-color: black;
         color: white;
-        transition: padding 0.8s;
+        transition: padding 0.52s;
       }
       .chat-input:hover{
         padding: 12px 17px;
@@ -81,7 +81,7 @@
         border-radius: 10px;
         cursor: pointer;
         margin-right: 10px;
-        transition: padding 0.8s,background-color,color 0.8s;
+        transition: padding 0.52s,background-color,color 0.52s;
       }
       .send-button:hover{
         padding: 12px 17px; 
@@ -101,6 +101,7 @@
         display: flex;
         align-items: flex-start;
       }
+      
 
       .chat-message-text {
         padding: 15px 20px;
@@ -112,12 +113,18 @@
         max-width: 300px;
         cursor: pointer;
         color:white;
+        transition: padding 0.52s;
+      }
+
+      .chat-message-text:hover{
+        padding: 20px 25px;
       }
 
       .chat-message-profile {
         width: 45px;
         height: auto;
       }
+
 
       /* hide scrollbar in WebKit */
       .chat-messages-container::-webkit-scrollbar {
@@ -177,7 +184,6 @@
               id: crypto.randomUUID(),
             }
           ]);
-
         }
 
         function saveInputText(event)
