@@ -184,10 +184,8 @@
                 }
           ]);
 
-          try {
-              const response = await Chatbot.getResponseAsync(inputText);
-              } catch (error) {
-              }
+          const response = await Chatbot.getResponseAsync(inputText);
+              
 
           setChatMessages([
             ...newChatMessages,
