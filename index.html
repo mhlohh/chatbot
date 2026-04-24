@@ -284,11 +284,19 @@
       //def chat componets
       function ChatMessages({chatMessages})
       {
-        
+        const chatMessagesRef = React.useRef(null);
+        React.useEffect(()=>{
+          const containerElem = chatMessagesRef.current;
+          if (containerElem){
+            containerElem.scrollTop = containerElem.scrollHeight;
+          }
+          
+        },[chatMessages]);
 
         return(
           <div
             className = "chat-messages-container"
+            ref = {chatMessagesRef}
           >
             {
               chatMessages.map((chatMessage)=> {
@@ -313,25 +321,25 @@
             {
                   message: 'hello chatbot',
                   sender: 'user',
-                  id: 'id1'
+                  id: crypto.randomUUID(),
             },
 
             {
                   message: 'Hello! How can I help you?',
                   sender: 'robot',
-                  id: 'id2'
+                  id: crypto.randomUUID(),
             },
 
             {
                   message: 'can you get me todays date ?',
                   sender: 'user',
-                  id: 'id3'
+                  id: crypto.randomUUID(),
             },
 
             {
                   message: 'today is Setemper 27',
                   sender: 'robot',
-                  id: 'id4'
+                  id: crypto.randomUUID(),
             }
 
           ]
