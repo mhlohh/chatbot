@@ -284,10 +284,22 @@
       //def chat componets
       function ChatMessages({chatMessages})
       {
-        const chatMessagesRef = React.useRef(null);
-        React.useEffect(()=>{
+        //This ref is a hook in react which save the html componet inside eg:(div)
+        //While Intializign put in a variable then default value null
+        const chatMessagesRef = React.useRef(null); //save an HTML element from the component
+        //Usef Effect is a React hook which update the code if there is a change in the certain code .
+        // It is an array so it have two values change to made after changing somehting on the page
+        //then the element the changes which triggers the function eg(React.useEffect(()=>{the change after the trigger change},[the list of change trigger]));
+        React.useEffect(()=>{ //Run code after componet is created or updated
+          /*for going into the lowest scroll in page we need to put the useRef
+           current value from the div on below (className = chat-messages-container) put ref as
+           artribute and input the variable that stores the useRef(null) after that current chatMEssages 
+           store in a variable const*/
           const containerElem = chatMessagesRef.current;
+          //This where the it checke weather its null
           if (containerElem){
+            //it put the scrolltop to bottom that is height of scroll 
+            //THis run if there is change in the chatMessages
             containerElem.scrollTop = containerElem.scrollHeight;
           }
           
@@ -296,6 +308,7 @@
         return(
           <div
             className = "chat-messages-container"
+            //This is the useRef hook value
             ref = {chatMessagesRef}
           >
             {
