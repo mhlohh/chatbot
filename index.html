@@ -32,7 +32,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        height: 90vh;
+        height: 87vh;
         background-color:#1d1d1d;
         margin-top: 50px;     
         margin-bottom: 50px; 
@@ -48,7 +48,7 @@
         padding-bottom: 3px;
         padding-left: 34px;
         padding-right: 34px;
-        box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.404);
+        box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.404);
       }
 
       .chat-messages-container {
@@ -63,7 +63,7 @@
         display: flex;
         gap: 10px;
         margin-bottom: 60px;
-        padding: 10px 0;
+        padding: 10px ;
       }
 
       .chat-input {
@@ -195,6 +195,7 @@
               id: crypto.randomUUID(),
             }
           ]);
+          setInputText('')
 
         }
 
@@ -223,8 +224,11 @@
               className = "chat-input"
               type = "text" 
               placeholder = "Send a message to Chatbot" 
+              //THis is element gives event as atributes to the function (saveInputText)
+              //the value from the textbox
               onChange = {saveInputText}
               value = {inputText}
+              //This check for keys like(enter,esc..) then input the text based on that
               onKeyDown = {inputTextKey}
              
             />
