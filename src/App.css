@@ -1,0 +1,48 @@
+ 
+      img{
+        border-radius: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      a{
+        text-decoration: none;
+        color:#494848;
+        transition: font-size 0.3s,color 0.3s;
+      }
+      a:hover{
+        font-size: 26px;
+        color:white;
+      }
+
+      a:active{
+        color:rgb(84, 84, 143);
+      }
+      .app-container {
+        max-width:700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: 87vh;
+        background-color:#1d1d1d;
+        margin-top: 50px;     
+        margin-bottom: 50px; 
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.404);
+        transition: padding 0.52s, box-shadow 0.52s;
+      }
+
+      .app-container:hover{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 34px;
+        padding-right: 34px;
+        box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.404);
+      }
+
+      
+      .builder-name{
+        color: white;
+        font-weight: bold;
+      }

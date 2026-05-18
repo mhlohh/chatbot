@@ -1,0 +1,21 @@
+.chat-messages-container {
+        flex: 1;
+        margin-top: 20px;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      
+
+      
+      .default-message{
+        color:white;
+        display: flex;
+        
+      }
+
+      /* hide scrollbar in WebKit */
+      .chat-messages-container::-webkit-scrollbar {
+        display: none;
+      }
