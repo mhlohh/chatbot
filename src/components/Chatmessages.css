@@ -6,6 +6,7 @@
         overflow: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        min-height: 0;
       }
       
       
