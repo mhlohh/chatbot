@@ -31,7 +31,10 @@ export function ChatMessages({chatMessages})
             //This is the useRef hook value
             ref = {chatMessagesRef}
           >
-           <p className = "default-message">{chatMessages.length === 0 && ("Welcome to the chatbot project! Send a message using the textbox below.")}</p>
+          <div class = "default-message-container">
+              <p className = "default-message">{chatMessages.length === 0 && ("Welcome to the chatbot project!")}</p>
+          </div>
+           
             {
               chatMessages.map((chatMessage)=> {
           return (

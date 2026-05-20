@@ -1,6 +1,8 @@
 .chat-messages-container {
         flex: 1;
         margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
         overflow: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -10,12 +12,23 @@
 
       
       .default-message{
-        color:white;
+        background: linear-gradient(to right, #825fff, #feb47b);
+        -webkit-background-clip: text;
+        background-clip:text;
+        -webkit-text-fill-color:transparent;
+        color: transparent;
         display: flex;
-        
+        font-size: 30px;
+        font-weight: bold;
+        width: 500px;
+
       }
 
       /* hide scrollbar in WebKit */
       .chat-messages-container::-webkit-scrollbar {
         display: none;
+      }
+      .default-message-container{
+        display: flex;
+        justify-content: center;
       }

@@ -31,7 +31,7 @@ export function ChatMessage({message, sender})
                 alt="User profile"
               />
             )}
-            <div className = "chat-message-text">
+            <div className = {sender === 'robot' ? 'chat-robot-text': 'chat-user-text'}>
               {message}
             </div>    
             {sender === 'user' && (

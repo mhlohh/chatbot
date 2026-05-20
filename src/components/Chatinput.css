@@ -1,17 +1,25 @@
 .chat-input-container {
         display: flex;
         gap: 10px;
-        margin-bottom: 60px;
-        padding: 10px ;
+        margin-bottom: 20px;
+        background-color: rgb(0, 0, 64);
+        padding: 10px;
+        border: solid;
+        border-color: white;
+        border-width: 1px;
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       .chat-input {
         font-size: 16px;
-        padding: 10px 15px;
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        margin-left: 10px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        border: solid;
+        border-color: rgba(255, 255, 255, 0.241);
         margin-right: 10px;
+        
         flex: 1;
         background-color: black;
         color: white;
@@ -22,14 +30,13 @@
       }
 
       .send-button {
-        background: #28a745;
+        background: #3667c1;
         color: #fff;
         border: 0;
         font-size: 16px;
         padding: 10px 15px;
-        border-radius: 10px;
+        border-radius: 20px;
         cursor: pointer;
-        margin-right: 10px;
         transition: padding 0.52s,background-color,color 0.52s;
       }
       .send-button:hover{
