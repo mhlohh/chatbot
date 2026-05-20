@@ -31,6 +31,24 @@
         transition: padding 0.52s, box-shadow 0.52s;
       }
 
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .app-container {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          height: 90vh;
+          border-radius: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .app-container {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          height: 92vh;
+        }
+      }
+
       .app-container:hover{
         padding: 2px;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);

@@ -20,8 +20,22 @@
         display: flex;
         font-size: 30px;
         font-weight: bold;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
+        word-wrap: break-word;
+      }
 
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .default-message {
+          font-size: 22px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .default-message {
+          font-size: 18px;
+        }
       }
 
       /* hide scrollbar in WebKit */

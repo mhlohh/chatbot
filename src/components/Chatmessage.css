@@ -23,6 +23,14 @@
         transition: padding 0.52s;
       }
 
+      @media (max-width: 480px) {
+        .chat-user-text {
+          max-width: 85%;
+          padding: 12px 15px;
+          font-size: 14px;
+        }
+      }
+
       .chat-robot-text {
         padding: 15px 20px;
         background: #c69bf2;
@@ -36,6 +44,14 @@
         cursor: pointer;
         color:black;
         transition: padding 0.52s;
+      }
+
+      @media (max-width: 480px) {
+        .chat-robot-text {
+          max-width: 85%;
+          padding: 12px 15px;
+          font-size: 14px;
+        }
       }
 
       .chat-robot-text:hover,.chat-user-text:hover{
