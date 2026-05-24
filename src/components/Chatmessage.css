@@ -4,18 +4,12 @@
         align-items: flex-start;
       }
 
-.chat-message-user p{
-  font-size: 12px;
-  color:#bec8d4f1;
 }
       .chat-message-robot {
         display: flex;
         align-items: flex-start;
       }
-.chat-message-robot p{
-  font-size: 12px;
-  color:rgba(28, 2, 109, 0.924);
-}
+
       .chat-user-text {
         padding: 15px 20px;
         background: #0361ce;
