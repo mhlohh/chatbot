@@ -1,76 +1,80 @@
- 
-      img{
-        border-radius: 25px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      a{
-        text-decoration: none;
-        color:#494848;
-        transition: font-size 0.3s,color 0.3s;
-      }
-      a:hover{
-        font-size: 26px;
-        color:white;
-      }
+ img {
+   border-radius: 25px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
 
-      a:active{
-        color:rgb(84, 84, 143);
-      }
-      .app-container {
-        max-width:600px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        height: 84vh;
-        height: 84dvh;
-        background-color:#19025c36;
-        margin-top: 80px;     
-        margin-bottom: 80px; 
-        border-radius: 30px;
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.404);
-        transition: padding 0.52s, box-shadow 0.52s;
-        position: relative;
-      }
+ a {
+   text-decoration: none;
+   color: #494848;
+   transition: font-size 0.3s, color 0.3s;
+ }
 
-      /* Mobile Responsive */
-      @media (max-width: 768px) {
-        .app-container {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          height: 90vh;
-          height: 90dvh;
-          border-radius: 15px;
-        }
-      }
+ a:hover {
+   font-size: 26px;
+   color: white;
+ }
 
-      @media (max-width: 480px) {
-        .app-container {
-          margin-top: 10px;
-          margin-bottom: 10px;
-          height: 92vh;
-          height: 92dvh;
-        }
-      }
+ a:active {
+   color: rgb(84, 84, 143);
+ }
 
-      .app-container:hover{
-        padding: 2px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-      }
+ .app-container {
+   max-width: 600px;
+   margin: 80px auto;
+   display: flex;
+   flex-direction: column;
+   height: 84dvh;
+   background-color: #19025c36;
+   border-radius: 30px;
+   border: solid;
+   border-color: rgba(255, 255, 255, 0.424);
+   border-width: 1px;
+   transition: padding 0.8s, box-shadow 0.8s;
+   position: relative;
+   padding: 20px 20px;
+ }
 
-      
-      .builder-name{
-        color: white;
-        font-weight: bold;
-      }
+ /* Mobile Responsive */
 
-      @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
+ .app-container:hover {
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+ }
+
+ @keyframes slideIn {
+   from {
+     opacity: 0;
+     transform: translateY(10px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ @media (max-width: 768px) {
+   .app-container {
+     max-width: 450px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     height: 90vh;
+     padding: 20px 15px;
+   }
+
+ }
+
+ @media (max-width: 530px) {
+   .app-container {
+     height: 90vh;
+     max-width: 380px;
+   }
+ }
+
+ @media (max-width: 460px) {
+    .app-container{
+      max-width: 320px;
+      padding: 5px 10px;
+    }
+ }
