@@ -1,6 +1,5 @@
 .chat-input-container {
   display: flex;
-  gap: 10px;
   background-color: rgb(0, 0, 64);
   padding: 10px;
   margin: 5px 0px;
@@ -10,6 +9,7 @@
   border-radius: 30px;
   max-width: 580px;
   transition: padding 0.3s ease;
+  justify-content: space-around;
 }
 
 .chat-input-container:hover{
