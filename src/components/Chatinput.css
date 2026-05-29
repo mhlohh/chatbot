@@ -105,7 +105,7 @@
 
 @media (max-width: 460px){
   .chat-input{
-    max-width: 120px;
-    font-size: 9px;
+    max-width: 180px;
+    font-size: 12px;
   }
 }

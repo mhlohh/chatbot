@@ -74,7 +74,7 @@
 
  @media (max-width: 460px) {
     .app-container{
-      max-width: 320px;
+      max-width: 360px;
       padding: 5px 10px;
     }
  }
