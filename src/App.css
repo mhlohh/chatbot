@@ -25,7 +25,8 @@
    display: flex;
    flex-direction: column;
    height: 84dvh;
-   background-color: #19025c36;
+   background-color: #7c739846;
+  backdrop-filter:blur(20px);;
    border-radius: 30px;
    border: solid;
    border-color: rgba(255, 255, 255, 0.424);
